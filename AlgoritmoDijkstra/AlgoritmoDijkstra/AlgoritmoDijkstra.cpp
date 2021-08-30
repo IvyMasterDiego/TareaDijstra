@@ -31,9 +31,13 @@ void printSolution(int dist[]) {
 //esta funcion implementa el algoritmo de Dijkstra 
 //para un grafico el cual esta representado por una matriz de adyacencia
 void dijkstra(int graph[V][V], int src) {
-
+	
+	// esta matriz es la que mantendra la distancia mas corta
+	// de la src a la variable i 
 	int dist[V];
 
+	//esta variable sera la que vaya llevando en cuenta cual es camino 
+	// mas corto, esta es la que podemos decir que va validando cada ruta que se toma
 	bool sptSet[V];
 
 	for (int i = 0; i < V; i++)
